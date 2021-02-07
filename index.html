@@ -2,8 +2,10 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>История апельсинки</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
         <link href="./index.css" rel="stylesheet" />
     </head>
@@ -11,9 +13,18 @@
         <div class="page">
             <section class="section">
                 <div class="section-col section-col-60">
-                    <img src="./images/01.jpg" alt="Orange Layer 1" class="parallax-layer" data-depth="0.1"/>
-                    <img src="./images/02.png" alt="Orange Layer 2" class="img-abs parallax-layer" data-depth="0.2"/>
-                    <img src="./images/03.png" alt="Orange Layer 3" class="img-abs parallax-layer" data-depth="0.1"/>
+                    <picture>
+                       <source srcset="./images/01.webp" type="image/webp">
+                       <img src="./images/01.jpg" alt="Orange Layer 1" class="parallax-layer" data-depth="0.1"/>
+                    </picture>
+                    <picture>
+                       <source srcset="./images/02.webp" type="image/webp">
+                       <img src="./images/02.png" alt="Orange Layer 2" class="img-abs parallax-layer" data-depth="0.2"/>
+                    </picture>
+                    <picture>
+                       <source srcset="./images/03.webp" type="image/webp">
+                       <img src="./images/03.png" alt="Orange Layer 3" class="img-abs parallax-layer" data-depth="0.1"/>
+                    </picture>
                 </div>
                 <div class="section-col section-col-40">
                     <h1>История апельсинки</h1>
@@ -27,12 +38,29 @@
                     <p>А&nbsp;потом она упала и&nbsp;стала апельсиновым соком. 🔥</p>
                 </div>
                 <div class="section-col section-col-60">
-                    <img src="./images/04.jpg" alt="Orange Slice Layer 1" class="parallax-layer" data-depth="0.1"/>
+                  <picture>
+                    <source srcset="./images/04.webp" type="image/webp">
+                    <img src="./images/04.png" alt="Orange Slice Layer 1" class="parallax-layer" data-depth="0.1"/>
+                  </picture>
+                  <picture>
+                    <source srcset="./images/05.webp" type="image/webp">
                     <img src="./images/05.png" alt="Orange Slice Layer 2" class="img-abs parallax-layer" data-depth="0.2"/>
+                  </picture>
                 </div>
             </section>
         </div>
-        <div class="bubbles parallax-layer" data-depth="0.3"></div>
+        <div class="bubbles parallax-layer" data-depth="0.3">
+          <picture>
+            <source srcset="./images/07.webp" type="image/webp">
+            <img src="./images/07.png" alt="Orange juice bottom" class="Orange__drops Orange__juice"/>
+          </picture>
+        </div>
+        <div>
+          <picture>
+            <source srcset="./images/06.webp" type="image/webp">
+            <img src="./images/06.jpg" alt="Orange juice bottom" class="Orange__juice"/>
+          </picture>
+        </div>
         <script src="./index.js"></script>
     </body>
 </html>

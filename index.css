@@ -6,10 +6,7 @@ body {
     position: relative;
     margin: 0;
     padding: 0;
-    background: url('./images/06.jpg') repeat-x bottom center;
-    padding-bottom: 6rem;
     background-size: 50vw;
-    min-height: 100vh;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -39,7 +36,6 @@ p {
     padding: 2rem 3rem;
     box-sizing: border-box;
 }
-
 .section {
     display: flex;
     align-items: center;
@@ -57,19 +53,9 @@ p {
     }
 
     .section-col-60 {
-        width: 60%
+        width: 60%;
+        margin-top: 100px;
     }
-
-@media only screen and (max-width: 750px) {
-    .section {
-        display: block;
-    }
-        .section-col,
-        .section-col-40,
-        .section-col-60 {
-            width: 100%;
-        }
-}
 
 .img-abs {
     top: 0;
@@ -82,7 +68,22 @@ p {
     position: absolute;
     bottom: 0;
     left: 0;
-    background: url('./images/07.png') repeat-x bottom center;
-    background-size: 50vw;
     height: 14rem;
+}
+.Orange__juice {
+ width: 100%;
+ display: block;
+}
+@media only screen and (max-width: 750px) {
+    .section {
+        display: block;
+    }
+        .section-col,
+        .section-col-40,
+        .section-col-60 {
+            width: 100%;
+        }
+        .bubbles {
+            height: 4rem;
+        }
 }
